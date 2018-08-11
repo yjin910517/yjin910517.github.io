@@ -166,6 +166,11 @@
 			background-color:#eee;
 		}
 
+		.project-item {
+			background-color: blue;
+			padding:10px;
+		}
+
 
 		</style>
   	</head>
@@ -277,14 +282,27 @@
      
 	      <div id="section3" class="container-fluid">
 	        <h2 class = "section-title">Certificates</h2>
+
+			<div class="responsive">
+			  <div class="gallery">
+			    <a target="_blank" href="img/deep_learning_certificate.png">
+			      <img src="img/deep_learning_certificate.png" alt="DeepLearning.ai Certificate" width="190" height="165">
+			    </a>
+			    <div class="desc">
+			    	<p style = "margin:0px;">DeepLearning.ai Deep Learning Specialization (5 courses)</p>
+			    	<p style = "margin:0px;">Achieved on July, 2018</p>
+			    </div>
+			  </div>
+			</div>
+
 			<div class="responsive">
 			  <div class="gallery">
 			    <a target="_blank" href="img/udacity_certificate.png">
-			      <img src="img/udacity_certificate.png" alt="Udacity Certificate" width="300" height="200">
+			      <img src="img/udacity_certificate.png" alt="Udacity Certificate" width="190" height="165">
 			    </a>
 			    <div class="desc">
 			    	<p style = "margin:0px;">Udacity Data Analyst NanoDegree (One Year Online Degree)</p>
-			    	<p style = "margin:0px;">Achieved Mar, 2017</p>
+			    	<p style = "margin:0px;">Achieved on Mar, 2017</p>
 			    </div>
 			  </div>
 			</div>
@@ -293,11 +311,11 @@
 			<div class="responsive">
 			  <div class="gallery">
 			    <a target="_blank" href="img/ml_certificate.jpg">
-			      <img src="img/ml_certificate.jpg" alt="Stanford Certificate" width="600" height="400">
+			      <img src="img/ml_certificate.jpg" alt="Stanford Certificate" width="190" height="165">
 			    </a>
 			    <div class="desc">
 			    	<p style = "margin:0px;">Stanford Machine Learning Certificate</p>
-			    	<p style = "margin:0px;">Achieved Aug, 2016</p>
+			    	<p style = "margin:0px;">Achieved on Aug, 2016</p>
 			    </div>
 			  </div>
 			</div>
@@ -404,7 +422,45 @@
 
 	      <div id="section5" class="container-fluid">
 	        <h2 class = "section-title">Projects</h2>
-	        <p>WIP</p>
+	        <div class = "project-item">
+	        	<h3>Craft Beer Data Analysis</h3>
+	        	<img href="">
+	        	<p>Tools: Python (Beautiful Soup, Surprise,pandas), R (ggplot2, Rmd)</p>
+	            <p>This is a project I did for The Data Incubator application. Personally, I love craft beer. So I decided to scrape beer rating data from the famous BeerAdvocate.com and make something interesting (and hoppy). I leveraged existing collaborative filter algorithms and built a preliminary beer recommendation project. This project earned me the admission of Data Incubator Scholar. </p>
+	        	<a href="https://yjin910517.github.io/projects/data_incubator/presentation.pdf">Project Proposal >></a>
+	        	<br>
+	        	<a href="https://yjin910517.github.io/projects/data_incubator/plot1.html">Exploratory Visualization 1 >></a>
+	        	<br>
+	        	<a href="https://yjin910517.github.io/projects/data_incubator/plot2.html">Exploratory Visualization 2 >></a>
+	        	<br>
+	        	<a href="https://github.com/yjin910517/data_incubator">Source Code >></a>
+	        </div>
+
+	        <br>
+	        <div class = "project-item">
+	        	<h3>Time Series Analysis</h3>
+	        	<p>Tools: R (XXX,xxx), </p>
+	        	<p>Description blah blah</p>
+	        	<a href="https://yjin910517.github.io/projects/stats531_JIN_Yue_final_project.html">Final Report >></a>
+	        	<a href="https://github.com/yjin910517/stats531_proj/blob/master/final/for_submit/stats531_JIN%20Yue_final%20project.Rmd">Source Code >></a>
+	        </div>
+
+	        <br>
+	        <div class = "project-item">
+	        	<h3>D3 Visualization</h3>
+	        	<p>Tools: Javascript, D3, Python(xxx) </p>
+	        	<p>Description blah blah, using Javascript D3, for Udacity data analyst nanodegree</p>
+	        	<a href="">Interactive Visualization >></a>
+	        	<a href="https://github.com/yjin910517/d3_visualization_dand_p6">Source Code >></a>
+	        </div>
+
+	        <br>
+	        <div class = "project-item">
+	        	<h3>Hidden Markov Model Implementation</h3>
+	        	<p>Tools: C++, Rcpp</p>
+	        	<p>XXX</p>
+	        	<a href="https://github.com/yjin910517/rcpp_hmm">Source Code >></a>
+	        </div>
 	      </div>
 
 	</body>
