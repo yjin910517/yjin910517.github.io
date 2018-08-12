@@ -2,7 +2,6 @@
 <html lang="en">
   	<head>
   		<!--Change meta browser setting; 
-  			Change icon picture;
   		    -->
 	    <meta charset="utf-8">
 	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +11,7 @@
 	    <meta name="author" content="Yue Tyler Jin">
 	    <link rel="icon" href="img/favicon.png">
 
-	    <title>JIN Yue</title>
+	    <title>JIN Yue's Profile</title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
 		<script src="lib/jquery.min.js"></script>
 		<script src="lib/bootstrap.min.js"></script>
@@ -30,62 +29,65 @@
 			background-color:#eee;
 		}
 
-		#content-wrap {
-			background-color:white;
-			display:block;
+		h1 {
+			padding-left:20px;
 		}
 
-		#link-wrap {
-			display:inline-block;
-			background-color:#ADD8E6;
-			width:100%;
-			color:black;
-			padding:10px;
+		.links{
+			list-style: none;
+			font-weight: bold;
+			color:  black;
+			padding: 10px 20px 10px;
+			margin: 0;
 		}
 
-		#link-wrap div {
-			width:20%;
+		.links a{
 			display:inline-block;
+			text-decoration: none;
+			color: inherit;
 		}
+
 
 		#self-intro-wrap {
 			float:left;
 			height:auto;
-			padding:20px;
+			padding:10px 20px 10px;
 
 		}
 
 		.section-title {
 			background-color:#ccc; 
 			padding:10px;
+			margin-bottom: 30px;
 		}
 
 		#section1 {
 			color: black; 
-			background-color:#eee;
-			width:80%;
-			margin-bottom: 10px;
-		}
-
-		.working-container {
-			background-color:gray;
-			padding-left: 10px;
-		}
-
-		.working-detail {
-			background-color:white; 
-			padding-left: 10px; 
-			background-color: blue;
-		}		
-
-		#section2 { 
-			color: black; 
 			width:80%;
 			margin-bottom: 10px;
 			background-color:#eee;
 		}
 
-		#section3 {
+		.project-item {
+			background-color: white;
+			padding-left:10px;
+			padding-bottom:10px;
+			margin-bottom:10px;
+			box-shadow: 5px 5px 2px 1px rgba(0, 0, 255,.1);
+		}
+
+		.project-name {
+			padding-top:10px;
+			font-size:24px;
+			margin-bottom:30px;
+		}
+
+		.project-desc {
+			background-color:white;
+			margin:5px;
+		}
+
+		#section2 {
 			color: black; 
 			width:80%;
 			margin-bottom: 10px;
@@ -117,7 +119,7 @@
 		.responsive {
 		    padding: 0 6px;
 		    float: left;
-		    width: 49.99999%;
+		    width: 33.333%;
 		}
 
 		.clearfix:after {
@@ -127,7 +129,7 @@
 		}
 
 
-		#section4 {
+		#section3 {
 			color: black; 
 			width:80%;
 			margin-bottom: 10px;
@@ -159,18 +161,23 @@
 			display:inline-block;
 		}
 
-		#section5 {
-			color: black; 
-			width:80%;
-			margin-bottom: 10px;
-			background-color:#eee;
+		.footer-basic-centered{
+			background-color: #292c2f;
+			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+			box-sizing: border-box;
+			width: 100%;
+			text-align: center;
+			font: normal 18px sans-serif;
+
+			padding: 10px;
+			margin-top: 30px;
 		}
 
-		.project-item {
-			background-color: blue;
-			padding:10px;
+		.footer-basic-centered .footer-company-name{
+			color:  #8f9296;
+			font-size: 14px;
+			margin: 0;
 		}
-
 
 		</style>
   	</head>
@@ -191,11 +198,8 @@
 					<div class="collapse navbar-collapse" id="myNavbar">
 				      <ul class="nav navbar-nav">
 				      	<li><a href="#section0">Intro</a></li>
-				      	<li><a href="#section1">Education</a></li>
-				        <li><a href="#section2">Working Experience</a></li>
-				        <li><a href="#section3">Certificates</a></li>
-				        <li><a href="#section4">Coding Skills</a></li>
-				        <li><a href="#section5">Projects</a></li>
+				      	<li><a href="#section1">Projects</a></li>
+				        <li><a href="#section3">Coding Skills</a></li>
 				      </ul>
 			    	</div>
 			    </div>
@@ -203,90 +207,116 @@
 	    </nav>
 
 	    <div id="section0" class="container-fluid">
-		  <h1>Welcome to my profile page</h1>
-		  <div id = "content-wrap">
-			  <div id="link-wrap">
-				  <div><a href="https://github.com/yjin910517" target="_blank">Github</a></div>
-				  <div><a href="https://www.linkedin.com/in/jinyuetyler/" target="_blank">Linkedin</a></div>
-				  <div><a href="mailto:jinyue@umich.edu">Email</a></div> 
-				  <div><a href="resume.pdf" target="_blank">PDF Resume</a></div> 	  	
-		      </div>
-			  <div id = "self-intro-wrap">
-			  	<p>Hello, there! Thank you for visiting my homepage. My name is JIN Yue, I am a first year biostatistics master student in University of Michigan, Ann Arbor. Currently I am looking for a 2018 summer internship as data scientist/data analyst, preferably in the field of healthcare. Feel free to explore my resume below, or directly check some projects I did <a href = "projects.html">here</a>. If you think I might be a suitable candidate for your team, do not hesitate to contact me through email/linkedin provided above.</p>
-			  </div>
-		  </div>
+			<h1>Hello, nice to have you here!</h1>
+		    <p class="links">
+				<a href="https://github.com/yjin910517" target="_blank">Github </a>
+				|
+				<a href="https://www.linkedin.com/in/jinyuetyler/" target="_blank"> Linkedin </a>
+				|
+				<a href="mailto:jinyue@umich.edu"> Email </a>
+				|
+				<a href="resume.pdf" target="_blank"> PDF Resume </a>
+
+			</p>
+
+			<div id = "self-intro-wrap">
+			  	<p>Thank you for visiting my homepage. My name is JIN Yue. I am a second year Master's student in Biostatistics at University of Michigan. Currently I am looking for a full-time job as data scientist/data analyst, preferably in the field of healthcare. Please feel free to review my <a href="resume.pdf" target="_blank">resume</a>, or browse some of the <a href = "#section1">projects</a> I have done. If you find me as a potential candidate for your team, please do not hesitate to contact me through email/linkedin as provided above.</p>
+			</div>
 		</div>
 
-	      <div id="section1" class="container-fluid"> 
-	        <h2 class = "section-title">Education</h2>
-	        <div class = "working-container">
-	        	<div><h3>M.S in Biostatistics</h3></div>
-	        	<div><h5><i>School of Public Health, University of Michigan, Ann Arbor</i></h5></div>
-	        	<div><h5>09/2017-04/2019</h5></div>
-		        <div class = "working-detail">
-		        	<p>Ongoing Courses of 2017 Fall: </p>
-	        		<li>Computational Statistics (with C++, Python and R)</li>
-	        		<li>Probability and Distribution Theory</li>
-	        		<li>Applied Statistics in Regression (with application in R and SAS)</li>
-	        		<li>Fundamental SAS programming</li>
-		        </div>
-	        </div>
-	        <div class = "line-break"></div>
-	        <div class = "working-container">
-	        	<div><h3>5-Year Bachelor in Clinical Medicine </h3></div>
-	        	<div><h5><i>Medicine School, Shanghai Jiao Tong University (SJTU), China</i></h5></div>
-	        	<div><h5>09/2008-07/2013</h5></div>
-		        <div class = "working-detail">
-	        		<li>18-month intern physician clinical training at Shanghai Xinhua Hospital affiliated to SJTU</li>
-		        </div>
-	        </div>
-	        <div class = "line-break"></div>
+		<div id="section1" class="container-fluid">
+	        <h2 class = "section-title">Projects</h2>
+	        <div class = "project-item">
+	        	<h3 class = "project-name">Craft Beer Recommendation Algorithm</h3>
 
-	      </div>   
-	      <div id="section2" class="container-fluid">
-	        <h2 class = "section-title">Working Experience</h2>
-	        <div class = "working-container">
-	        	<div><h3>Senior Strategist/Co-founder</h3></div>
-	        	<div><h5><i>Shanghai DM&C Internet Technology Company, China</i></h5></div>
-	        	<div><h5>09/2015-05/2017</h5></div>
-		        <div class = "working-detail">
-		        	<li>Communicate with client and assign task to developers</li>
-			        <li>Design system workflow and database structure</li>
-			        <li>Manage new member recruitment and facilitate company fundraising activities</li>
-		        </div>
-	        </div>
+		        <img src="img/craftbeer_screenshot.png"  class="project-desc" width="50%">
 
-	        <div class = "working-container">
-	        	<div><h3>Business Analyst</h3></div>
-	        	<div><h5><i>Anance Capital, China</i></h5></div>
-	        	<div><h5>11/2014-09/2015</h5></div>
-		        <div class = "working-detail">
-		        	<li>Conduct commercial due diligence to evaluate business performance and market potential of investment targets selected from healthcare industry</li>
-			        <li>Report key findings to fund holders and provide suggestion on investment decision-making</li>
-			        <li>Confirm 5 investment targets to allocate a 10Mn RMB healthcare fund within a target timeframe of 1 year</li>
-		        </div>
+	        	<div class="project-desc">
+	        		<b>Tools:</b>
+	        		<li>Python (BeautifulSoup, Surprise, pandas)</li>
+	        		<li>R (ggplot2, Rmd)</li>
+	        	</div>
+
+	            <div class="project-desc">
+	            	<b>Description:</b>
+	            	<p>This is a project I created during my application for The Data Incubator program. I am a huge fan of craft beer. So, I came up with the idea to scrape and explore beer rating data from the famous beer-review website BeerAdvocate.com, to create something fun (and hoppy). I leveraged existing collaborative filter algorithms and built a preliminary beer recommendation project. This project brought me an offer of admission to The Data Incubator.</p>
+	            </div>
+	            <div class="project-desc">
+		        	<a href="https://yjin910517.github.io/projects/data_incubator/presentation.pdf" target="_blank">Project Proposal >></a>
+		        	<br>
+		        	<a href="https://yjin910517.github.io/projects/data_incubator/plot1.html" target="_blank">Exploratory Visualization 1 >></a>
+		        	<br>
+		        	<a href="https://yjin910517.github.io/projects/data_incubator/plot2.html" target="_blank">Exploratory Visualization 2 >></a>
+		        	<br>
+		        	<a href="https://github.com/yjin910517/data_incubator" target="_blank">Source Code >></a>
+	        	</div>	
+	        </div>	
+
+	        <br>
+	        <div class = "project-item">
+	        	<div class = "project-name">Dynamic Modeling of Infectious Disease Incidence </div>
+	        	<img src="img/dengue_screenshot.png" class="project-desc" width="50%">
+	        	<div class="project-desc">
+	        		<b>Tools:</b>
+	        		<li>R (pomp)</li>
+	        	</div>
+	            <div class="project-desc">
+	            	<b>Description:</b>
+	        	    <p>This is a course project I created for Time Series Analysis. I leveraged POMP (partially observed markov process) to model the incidence of Dengue in Malaysia. This dynamic modeling approach may help epidemiologists better understand the pattern of Dengue disease outbreaks.</p>
+	        	</div>
+	        	<div class="project-desc">
+		        	<a href="https://yjin910517.github.io/projects/stats531_JIN_Yue_final_project.html" target="_blank">Final Report >></a>
+		        	<br>
+		        	<a href="https://github.com/yjin910517/stats531_proj/blob/master/final/for_submit/stats531_JIN%20Yue_final%20project.Rmd" target="_blank">Source Code >></a>
+	        	</div>
 	        </div>
 
-	        <div class = "working-container" class="container-fluid">
-	        	<div><h3>Analyst/Senior Analyst</h3></div>
-	        	<div><h5><i>QuintilesIMS, Management Consulting, Shanghai office, China</i></h5></div>
-	        	<div><h5>04/2013-11/2014</h5></div>
-		        <div class = "working-detail">
-		        	<li>Evaluate target therapeutic area through qualitative study: literature review, desk research and physicians & opinion leader interview</li>
-			        <li>Construct market forecast and quantitative client performance evaluation leveraging in-house database, 3rd party databases and client internal data resource</li>
-			        <li>Assist project manager on client communication, project delivery and team coordination</li>
+	        <br>
+	        <div class = "project-item">
+	        	<div class = "project-name">Interactive Visualization of Global Health</div>
+	        	<img src="img/d3_screenshot.png" class="project-desc" width="50%">
+	        	<div class="project-desc">
+	        		<b>Tools:</b>
+	        		<li>Javascript</li>
+	        		<li>D3</li>
+	        		<li>Python</li>
+	        	</div>
+	            <div class="project-desc">
+	            	<b>Description:</b>
+	        		<p>This is an interactive visualization of BMI and blood pressure by gender and country, across 29 years for six continents. This project was built with D3. It is the 6th project of Udacity Data Analyst Nano Degree.</p>
+	        	</div>
+	        	<div class="project-desc">
+		        	<a href="https://yjin910517.github.io/projects/dand/index_final.html" target="_blank">Interactive Visualization >></a>
+		        	<br>
+		        	<a href="https://github.com/yjin910517/d3_visualization_dand_p6" target="_blank">Source Code >></a>
 		        </div>
 	        </div>
 
-	      </div>
+	        <br>
+	        <div class = "project-item">
+	        	<div class = "project-name">Hidden Markov Model Implementation</div>
+				<div class="project-desc">
+	        		<b>Tools:</b>
+	        		<li>C++</li>
+	        		<li>Rcpp</li>
+	        	</div>
+	            <div class="project-desc">
+	            	<b>Description:</b>
+	        		<p>This is an R package I built in the course of Computational Statistics. This R package includes two functions written in C++: (1) an implementation of Viterbi algorithm on continuous time hidden markov model, and (2) an implementation of forward-backward algorithm on the same model.</p>
+	        	</div>
+	        	<div class="project-desc">
+	        		<a href="https://github.com/yjin910517/rcpp_hmm" target="_blank">Source Code >></a>
+	        	</div>
+	        </div>
+	      </div>	      
      
-	      <div id="section3" class="container-fluid">
+	      <div id="section2" class="container-fluid">
 	        <h2 class = "section-title">Certificates</h2>
 
 			<div class="responsive">
 			  <div class="gallery">
 			    <a target="_blank" href="img/deep_learning_certificate.png">
-			      <img src="img/deep_learning_certificate.png" alt="DeepLearning.ai Certificate" width="190" height="165">
+			      <img src="img/deep_learning_certificate.png" alt="DeepLearning.ai Certificate">
 			    </a>
 			    <div class="desc">
 			    	<p style = "margin:0px;">DeepLearning.ai Deep Learning Specialization (5 courses)</p>
@@ -298,7 +328,7 @@
 			<div class="responsive">
 			  <div class="gallery">
 			    <a target="_blank" href="img/udacity_certificate.png">
-			      <img src="img/udacity_certificate.png" alt="Udacity Certificate" width="190" height="165">
+			      <img src="img/udacity_certificate.png" alt="Udacity Certificate">
 			    </a>
 			    <div class="desc">
 			    	<p style = "margin:0px;">Udacity Data Analyst NanoDegree (One Year Online Degree)</p>
@@ -311,7 +341,7 @@
 			<div class="responsive">
 			  <div class="gallery">
 			    <a target="_blank" href="img/ml_certificate.jpg">
-			      <img src="img/ml_certificate.jpg" alt="Stanford Certificate" width="190" height="165">
+			      <img src="img/ml_certificate.jpg" alt="Stanford Certificate">
 			    </a>
 			    <div class="desc">
 			    	<p style = "margin:0px;">Stanford Machine Learning Certificate</p>
@@ -324,7 +354,7 @@
 
 	      </div>
 
-	      <div id="section4" class="container-fluid">
+	      <div id="section3" class="container-fluid">
 	        <h2 class = "section-title">Coding Skills</h2>
 	        <div class = "progress-wrap">
 	        	<div class = "progress-label">
@@ -344,7 +374,143 @@
 	        	</div>
 	        </div>
 
+            <!--Stat skills-->
 	        <div class = "progress-wrap">
+	        	<div class = "progress-label progress-label-cat">
+	        		Statistics
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		R
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		SAS
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:65%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <br>
+
+			<!--ML skills-->
+			<div class = "progress-wrap">
+	        	<div class = "progress-label progress-label-cat">
+	        		Machine Learning
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Scikit-learn
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:70%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Keras
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:60%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Tensorflow
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <br>
+
+			<!--Python skills-->
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label progress-label-cat">
+	        		Python
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Numpy
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:75%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Pandas
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:65%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		OOP
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:55%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		Matplotlib
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:60%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <br>
+
+	        <!--DB skills-->
+			<div class = "progress-wrap">
 	        	<div class = "progress-label progress-label-cat">
 	        		Database
 	        	</div>
@@ -372,17 +538,63 @@
 					</div>	        		
 	        	</div>
 	        </div>
+
 	        <br>
 
-	        <div class = "progress-wrap">
+			<!--Others skills-->
+			<div class = "progress-wrap">
 	        	<div class = "progress-label progress-label-cat">
-	        		Python
+	        		Others
 	        	</div>
 	        </div>
 
 	        <div class = "progress-wrap">
 	        	<div class = "progress-label">
-	        		OOP
+	        		Julia
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:50%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		C++
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <br>
+
+			<!--WebDev skills-->
+			<div class = "progress-wrap">
+	        	<div class = "progress-label progress-label-cat">
+	        		Web Development
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		HTML
+	        	</div>
+	        	<div class = "progress-chart">
+			        <div class="progress">
+					  <div class="progress-bar progress-bar-success" role="progressbar" style="width:90%">
+					  </div>
+					</div>	        		
+	        	</div>
+	        </div>
+
+	        <div class = "progress-wrap">
+	        	<div class = "progress-label">
+	        		CSS
 	        	</div>
 	        	<div class = "progress-chart">
 			        <div class="progress">
@@ -394,11 +606,11 @@
 
 	        <div class = "progress-wrap">
 	        	<div class = "progress-label">
-	        		Sciki Learn
+	        		Javascript
 	        	</div>
 	        	<div class = "progress-chart">
 			        <div class="progress">
-					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:60%">
+					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:30%">
 					  </div>
 					</div>	        		
 	        	</div>
@@ -406,66 +618,23 @@
 
 	        <div class = "progress-wrap">
 	        	<div class = "progress-label">
-	        		Matplotlib
+	        		NodeJS
 	        	</div>
 	        	<div class = "progress-chart">
 			        <div class="progress">
-					  <div class="progress-bar progress-bar-info" role="progressbar" style="width:60%">
+					  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:15%">
 					  </div>
 					</div>	        		
 	        	</div>
 	        </div>
 
+	        <br>
 
 	      </div>
 
-
-	      <div id="section5" class="container-fluid">
-	        <h2 class = "section-title">Projects</h2>
-	        <div class = "project-item">
-	        	<h3>Craft Beer Recommendation Algorithm</h3>
-	        	<img href="img/craftbeer_screenshot.png">
-	        	<p>Tools: Python (BeautifulSoup,Surprise,pandas), R (ggplot2, Rmd)</p>
-	            <p>This is a project I did for The Data Incubator application. Personally, I love craft beer. So I decided to scrape beer rating data from the famous BeerAdvocate.com and make something interesting (and hoppy). I leveraged existing collaborative filter algorithms and built a preliminary beer recommendation project. This project earned me the admission of Data Incubator Scholar. </p>
-	        	<a href="https://yjin910517.github.io/projects/data_incubator/presentation.pdf">Project Proposal >></a>
-	        	<br>
-	        	<a href="https://yjin910517.github.io/projects/data_incubator/plot1.html">Exploratory Visualization 1 >></a>
-	        	<br>
-	        	<a href="https://yjin910517.github.io/projects/data_incubator/plot2.html">Exploratory Visualization 2 >></a>
-	        	<br>
-	        	<a href="https://github.com/yjin910517/data_incubator">Source Code >></a>
-	        </div>
-
-	        <br>
-	        <div class = "project-item">
-	        	<h3>Dynamic Modeling of Infectious Disease Incidence </h3>
-	        	<img href="img/craftbeer_screenshot.png">
-	        	<p>Tools: R (pomp)</p>
-	        	<p>This is the semester final project I did for a time series analysis course. I leveraged POMP(partially observed markov process) to model the Dengue incidence in Malaysia. This dynamic modeling approach may help epidemiologists better understand the pattern of Dengue disease outbreak. </p>
-	        	<a href="https://yjin910517.github.io/projects/stats531_JIN_Yue_final_project.html">Final Report >></a>
-	        	<br>
-	        	<a href="https://github.com/yjin910517/stats531_proj/blob/master/final/for_submit/stats531_JIN%20Yue_final%20project.Rmd">Source Code >></a>
-	        </div>
-
-	        <br>
-	        <div class = "project-item">
-	        	<h3>Interactive Visualization of Global Health</h3>
-	        	<img href="img/d3_screenshot.png">
-	        	<p>Tools: Javascript, D3, Python </p>
-	        	<p>This is an interactive visualization of BMI and blood pressure by gender and country. This project was built with D3. It is the 6th project of Udacity Data Analyst Nano Degree.</p>
-	        	<a href="https://yjin910517.github.io/projects/dand/index_final.html">Interactive Visualization >></a>
-	        	<br>
-	        	<a href="https://github.com/yjin910517/d3_visualization_dand_p6">Source Code >></a>
-	        </div>
-
-	        <br>
-	        <div class = "project-item">
-	        	<h3>Hidden Markov Model Implementation</h3>
-	        	<p>Tools: C++, Rcpp</p>
-	        	<p>This is a homework project for Computational Statistics. The R package I built includes two functions written in C++: An implementation of Viterbi algorithm on continuous time hidden markov model, and an implementation of forward-backward algorithm on the same model.</p>
-	        	<a href="https://github.com/yjin910517/rcpp_hmm">Source Code >></a>
-	        </div>
-	      </div>
+			<footer class="footer-basic-centered">
+				<p class="footer-company-name">JIN Yue 2018</p>
+			</footer>
 
 	</body>
 </html>
