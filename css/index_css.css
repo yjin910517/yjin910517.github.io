@@ -7,6 +7,7 @@ body {
 	color: black; 
 	width:80%;
 	margin-bottom: 10px;
+	padding-top:30px;
 	background-color:#eee;
 }
 
@@ -25,7 +26,7 @@ h1 {
 .links a{
 	display:inline-block;
 	text-decoration: none;
-	color: inherit;
+	color: gray;
 }
 
 
