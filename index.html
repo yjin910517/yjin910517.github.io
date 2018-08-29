@@ -13,173 +13,10 @@
 
 	    <title>JIN Yue's Profile</title>
 		<link rel="stylesheet" href="lib/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index_css.css">
+		<link rel="stylesheet" href="css/timeline_css.css">
 		<script src="lib/jquery.min.js"></script>
 		<script src="lib/bootstrap.min.js"></script>
-
-		<style>
-		body {
-			position: relative;
-			padding-top: 50px; 
-		}
-
-		#section0 {
-			color: black; 
-			width:80%;
-			margin-bottom: 10px;
-			background-color:#eee;
-		}
-
-		h1 {
-			padding-left:20px;
-		}
-
-		.links{
-			list-style: none;
-			font-weight: bold;
-			color:  black;
-			padding: 10px 20px 10px;
-			margin: 0;
-		}
-
-		.links a{
-			display:inline-block;
-			text-decoration: none;
-			color: inherit;
-		}
-
-
-		#self-intro-wrap {
-			float:left;
-			height:auto;
-			padding:10px 20px 10px;
-
-		}
-
-		.section-title {
-			background-color:#ccc; 
-			padding:10px;
-			margin-bottom: 30px;
-		}
-
-		#myproject {
-			color: black; 
-			width:80%;
-			margin-bottom: 10px;
-			background-color:#eee;
-		}
-
-		.project-item {
-			background-color: white;
-			padding-left:10px;
-			padding-bottom:10px;
-			margin-bottom:10px;
-			box-shadow: 5px 5px 2px 1px rgba(0, 0, 255,.1);
-		}
-
-		.project-name {
-			padding-top:10px;
-			font-size:24px;
-			margin-bottom:30px;
-		}
-
-		.project-desc {
-			background-color:white;
-			margin:5px;
-		}
-
-		#section2 {
-			color: black; 
-			width:80%;
-			margin-bottom: 10px;
-			background-color:#eee;
-		}
-
-		div.gallery {
-		    border: 1px solid #ccc;
-		}
-
-		div.gallery:hover {
-		    border: 1px solid #777;
-		}
-
-		div.gallery img {
-		    width: 100%;
-		    height: auto;
-		}
-
-		div.desc {
-		    padding: 15px;
-		    text-align: center;
-		}
-
-		* {
-		    box-sizing: border-box;
-		}
-
-		.responsive {
-		    padding: 0 6px;
-		    float: left;
-		    width: 33.333%;
-		}
-
-		.clearfix:after {
-		    content: "";
-		    display: table;
-		    clear: both;
-		}
-
-
-		#section3 {
-			color: black; 
-			width:80%;
-			margin-bottom: 10px;
-			background-color:#eee;
-		}
-
-		.progress-wrap {
-			width:95%;
-			height:20px;
-			margin:10px;
-		}
-
-		.progress-label {
-			width:20%;
-			height:100%;
-			float:left;
-			color:black;
-			text-align: right;
-			padding-right:10px;
-		}
-
-		.progress-label-cat {
-			font-weight:bold;
-		}
-
-		.progress-chart {
-			width:80%;
-			height:100%;
-			display:inline-block;
-		}
-
-		.footer-basic-centered{
-			background-color: #292c2f;
-			box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
-			box-sizing: border-box;
-			width: 100%;
-			text-align: center;
-			font: normal 18px sans-serif;
-
-			padding: 10px;
-			margin-top: 30px;
-		}
-
-		.footer-basic-centered .footer-company-name{
-			color:  #8f9296;
-			font-size: 14px;
-			margin: 0;
-		}
-
-		</style>
   	</head>
 
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -197,17 +34,47 @@
 				<div>
 					<div class="collapse navbar-collapse" id="myNavbar">
 				      <ul class="nav navbar-nav">
-				      	<li><a href="#section0">Intro</a></li>
+				      	<li><a href="#intro">Intro</a></li>
 				      	<li><a href="#myproject">Projects</a></li>
-				      	<li><a href="#section2">Certificates</a></li>
-				        <li><a href="#section3">Coding Skills</a></li>
+				      	<li><a href="#certificates">Certificates</a></li>
+				        <li><a href="#skills">Coding Skills</a></li>
+				        <li><a href="#quantified">Quantified Me</a></li>
+				        <!--
+				        <li><a href="#education">Education</a></li>
+				        <li><a href="#work-experience">Work Experience</a></li>
+				        //-->
 				      </ul>
 			    	</div>
 			    </div>
 		    </div>
 	    </nav>
 
-	    <div id="section0" class="container-fluid">
+
+<!--
+<div id="content">
+  <ul class="timeline">
+    <li class="event" data-date="09/2015-05/2017">
+      <h3>Senior Strategist / Co-founder</h3> 
+      <h3>DM&C Internet Technology</h3>
+      <p>I co-founded DM&C with two of my friends, Charles and Kythira, both of whom had a digital marketing background. We realized that most service agencies in China were competing to acquire rich & large clients, while small-medium size local business with limited budgets were often ignored. What if we can provide them with low priced, customized, small-scaled data solution and marketing advices? At that time, WeChat, the most popular instant message app in China, launched a lot of free APIs for mobile e-Commerce development. So what we do at DM&C was integrating clients' existing retail and inventory system with a new WeChat based customer service platform we built for them. After the databases were linked together, we conducted data analysis and help our clients improve their customer retention and accelerate their inventory rotation. </p>
+    </li>
+    <li class="event" data-date="2005">
+      <h3>Creative Component Launched</h3>
+      <p>Sed posuere consectetur est at lobortis. Nullam quis risus eget urna mollis ornare vel eu leo. Donec sed odio dui. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Nullam quis risus eget urna mollis ornare vel eu leo. Cras mattis consectetur purus sit amet fermentum.</p>    
+    </li>
+    <li class="event" data-date="2009">
+      <h3>Squareflair was Born</h3>
+      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Vestibulum id ligula porta felis euismod semper.</p> <p>Get ready!</p>    
+    </li>
+    <li class="event" data-date="January 24, 2018">
+      <h3>Squareflair Today</h3>
+      <p>Our success can be measured by lives changed and enhanced by more than eight years of Squarespace-focused service.</p>  
+    </li>
+  </ul>
+</div>
+
+//-->
+	    <div id="intro" class="container-fluid section-wrap">
 			<h1>Hello, nice to have you here!</h1>
 		    <p class="links">
 				<a href="https://github.com/yjin910517" target="_blank">Github </a>
@@ -215,17 +82,15 @@
 				<a href="https://www.linkedin.com/in/jinyuetyler/" target="_blank"> Linkedin </a>
 				|
 				<a href="mailto:jinyue@umich.edu"> Email </a>
-				|
-				<a href="resume.pdf" target="_blank"> PDF Resume </a>
 
 			</p>
 
-			<div id = "self-intro-wrap">
-			  	<p>Thank you for visiting my homepage. My name is JIN Yue. I am a second year Master's student in Biostatistics at University of Michigan. Currently I am looking for a full-time job as data scientist/data analyst, preferably in the field of healthcare. Please feel free to review my <a href="resume.pdf" target="_blank">resume</a>, or browse some of the <a href = "#myproject">projects</a> I have done. If you find me as a potential candidate for your team, please do not hesitate to contact me through email/linkedin as provided above.</p>
+			<div class = "intro-wrap">
+			  	<p>Thank you for visiting my homepage. My name is JIN Yue. I am a second year Master's student in Biostatistics at University of Michigan. Currently I am looking for a full-time job as data scientist/data analyst, preferably in the field of healthcare. Please feel free to browse some of the <a href = "#myproject">projects</a> I have done. The <a href = "#quantified">Quantified Me</a> is my personal favorite. If you find me as a potential candidate for your team, please do not hesitate to contact me through email/linkedin as provided above.</p>
 			</div>
 		</div>
 
-		<div id="myproject" class="container-fluid">
+		<div id="myproject" class="container-fluid section-wrap">
 	        <h2 class = "section-title">Projects</h2>
 	        <div class = "project-item">
 	        	<h3 class = "project-name">Craft Beer Recommendation Algorithm</h3>
@@ -311,7 +176,7 @@
 	        </div>
 	      </div>	      
      
-	      <div id="section2" class="container-fluid">
+	      <div id="certificates" class="container-fluid section-wrap">
 	        <h2 class = "section-title">Certificates</h2>
 
 			<div class="responsive">
@@ -355,7 +220,8 @@
 
 	      </div>
 
-	      <div id="section3" class="container-fluid">
+
+	      <div id="skills" class="container-fluid section-wrap">
 	        <h2 class = "section-title">Coding Skills</h2>
 	        <div class = "progress-wrap">
 	        	<div class = "progress-label">
@@ -633,9 +499,42 @@
 
 	      </div>
 
-			<footer class="footer-basic-centered">
-				<p class="footer-company-name">JIN Yue 2018</p>
-			</footer>
+		  <div id="quantified" class="container-fluid section-wrap">
+	        <h2 class = "section-title">Quantified Me</h2>
+	        <div class = "intro-wrap">
+			  	<p>Influenced by <a target = "_blank" href="http://quantifiedself.com/">Quantified Self</a>, I started to quantitatively track many aspects of my life in 2016. After all, what data project can be cooler than analysis yourself? I didn't use any fancy wearable techs to automate data tracking. Some data were recorded as plain text in diary, and others were extracted from websites and apps I used. At the end of every year, I compiled an annual report about myself. Exerpt of report 2016 and 2017 can be found below. I tried to add some new attributes to quantify every year. You can come back at the end of this year to check my 2018 annual report!</p>
+			</div>
+
+			<div class = "project-item">
+				<div class="project-desc">
+					<img src="img/2017/1.png"  class="project-desc" width="50%">
+				</div>
+				<br>
+				<div class="project-desc">
+		        	<a href="quantify2017.html" target="_blank">Exerpt of 2017 Annual report >></a>
+		        </div>
+		        <br>
+	        	<div class="project-desc">
+		        	<a href="quantify2016.html" target="_blank">Exerpt of 2016 Annual report >></a>
+		        </div>
+		        <br>
+	        </div>
+
+	      </div>
+
+<!--
+		  <div id="education" class="container-fluid section-wrap">
+	        <h2 class = "section-title">Education</h2>
+	      </div>
+
+		  <div id="work-experience" class="container-fluid section-wrap">
+	        <h2 class = "section-title">Work Experience</h2>
+	      </div>
+//-->
+
+		  <footer class="footer-basic-centered">
+			<p class="footer-company-name">JIN Yue 2018</p>
+		  </footer>
 
 	</body>
 </html>

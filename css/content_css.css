@@ -1,0 +1,48 @@
+body {
+	position: relative;
+	padding-top: 50px; 
+}
+
+.section-wrap {
+	color: black; 
+	width:80%;
+	margin-bottom: 10px;
+	background-color:#eee;
+}
+
+.section-title {
+	background-color:#ccc; 
+	padding:10px;
+	margin-bottom: 30px;
+}
+
+.intro-wrap {
+	float:left;
+	height:auto;
+	padding:10px 20px 10px;
+
+}
+
+.project-desc {
+	background-color:white;
+	margin:5px;
+	width:75%;
+}
+
+.footer-basic-centered{
+	background-color: #292c2f;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: center;
+	font: normal 18px sans-serif;
+
+	padding: 10px;
+	margin-top: 30px;
+}
+
+.footer-basic-centered .footer-company-name{
+	color:  #8f9296;
+	font-size: 14px;
+	margin: 0;
+}
